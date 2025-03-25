@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - Tour & Travel</title>
+  <style>
+    /* General Body and Section Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .achievement__section {
+      background: linear-gradient(135deg, #FF6F61, #FF8A80);
+      padding: 80px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Section Header */
+    .section__subheader {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .section__header {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .section__header span {
+      color: #FFEB3B;
+      font-weight: bold;
+    }
+
+    /* Achievement Cards Styling */
+    .achievement__content {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .achievement__card {
+      background: #fff;
+      width: 30%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transform: scale(1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .achievement__card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card Image Styling */
+    .card__image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .achievement__card:hover .card__image img {
+      transform: scale(1.05);
+    }
+
+    /* Card Details Styling */
+    .card__details {
+      padding: 20px;
+    }
+
+    .card__details h4 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card__details p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .achievement__content {
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .achievement__card {
+        width: 90%;
+        margin: 20px 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="achievement__section">
+    <div class="container">
+      <p class="section__subheader">Our Achievements</p>
+      <h2 class="section__header">Proudly Displaying Our <span>Certificates</span></h2>
+
+      <div class="achievement__content">
+        <!-- Certificate 1 -->
+        <div class="achievement__card">
+          <div class="card__image">
+            <img src="assets/certificate-1.png" alt="Certificate 1" />
+          </div>
+          <div class="card__details">
+            <h4>Certificate of Excellence</h4>
+            <p>Recognized for outstanding services in the tourism industry for 2023.</p>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="achievement__card">
+          <div class="card__image">
+            <img src="assets/certificate-2.png" alt="Certificate 2" />
+          </div>
+          <div class="card__details">
+            <h4>Top Travel Agency Award</h4>
+            <p>Awarded for the best travel agency of the year, 2022.</p>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="achievement__card">
+          <div class="card__image">
+            <img src="assets/certificate-3.png" alt="Certificate 3" />
+          </div>
+          <div class="card__details">
+            <h4>ISO 9001:2015 Certification</h4>
+            <p>Certified for maintaining the highest quality standards in services.</p>
+          </div>
+        </div>
+
+        <!-- Certificate 4 (optional) -->
+        <div class="achievement__card">
+          <div class="card__image">
+            <img src="assets/certificate-4.png" alt="Certificate 4" />
+          </div>
+          <div class="card__details">
+            <h4>Travel Safety Certificate</h4>
+            <p>Recognized for maintaining world-class safety protocols during travels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

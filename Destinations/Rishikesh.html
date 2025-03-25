@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rishikesh Adventure Package</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .package-header {
+            background: url('rishikesh-banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .package-header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .uk-card {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .book-btn {
+            background: #ff4500;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="package-header">
+        <h1>Rishikesh Adventure Package</h1>
+        <p>Experience the thrill of river rafting, bungee jumping & camping in the Yoga Capital of the World!</p>
+        <a href="#package-details" class="uk-button uk-button-primary uk-button-large">View Package</a>
+    </div>
+    
+    <div class="uk-container uk-margin-large-top" id="package-details">
+        <div class="uk-grid uk-child-width-1-2@m uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="rafting.jpg" alt="River Rafting">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">River Rafting</h3>
+                        <p>Enjoy an adrenaline-pumping white-water rafting experience on the Ganges.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img src="bungee.jpg" alt="Bungee Jumping">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Bungee Jumping</h3>
+                        <p>Take a leap from India's highest bungee platform for a thrilling adventure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="uk-container uk-text-center uk-margin-large-top">
+            <h2>Package Pricing</h2>
+            <table class="uk-table uk-table-divider uk-table-striped">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Inclusions</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard</td>
+                        <td>Rafting, Camping</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>Rafting, Camping, Bungee Jumping</td>
+                        <td>$180</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#" class="uk-button book-btn">Book Now</a>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
